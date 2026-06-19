@@ -3,5 +3,18 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
-  }
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["className[\\s]*=[\\s]*[{]?[\"'`]([^\"'`]*)[\"'`]", 1],
+    ["className[\\s]*=[\\s]*\\{[\\s]*[\"'`]([^\"'`]*)[\"'`]", 1]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescriptreact": "html",
+    "javascriptreact": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.validate": true,
+  "tailwindCSS.emmetCompletions": true
 }
