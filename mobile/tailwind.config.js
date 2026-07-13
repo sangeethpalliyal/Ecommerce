@@ -1,28 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // NOTE: Update this to include the paths to all files that contain Nativewind classes.
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#F4A261",
-          light: "#F4B183",
-          dark: "#E76F51",
-          soft: "#FFD7BA",
+          DEFAULT: "#1DB954", // spotify green
+          light: "#1ED760",
+          dark: "#1AA34A",
+        },
+        background: {
+          DEFAULT: "#121212", // dark background
+          light: "#181818",
+          lighter: "#282828",
         },
         surface: {
-          DEFAULT: "#1A1A1D",
-          light: "#2D2D30",
-          dark: "#0D0D0F",
-          card: "#242428",
+          DEFAULT: "#282828",
+          light: "#3E3E3E",
         },
-        foreground: "#FFFFFF",
-        "muted-foreground": "#A0A0A5",
-        "subtle-foreground": "#6B6B70",
+        text: {
+          primary: "#FFFFFF",
+          secondary: "#B3B3B3",
+          tertiary: "#6A6A6A",
+        },
+        accent: {
+          DEFAULT: "#1DB954",
+          red: "#F44336",
+          yellow: "#FFC107",
+        },
       },
     },
   },
   plugins: [],
-}
+};
